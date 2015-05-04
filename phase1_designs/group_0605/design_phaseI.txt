@@ -1,0 +1,25 @@
+All our data will be saved in SQLite.
+
+Our DataManager class will handle data manipulation and getting data from our SQLite database. 
+
+All patient class will have an array list of vital sign and array list of symptoms. Since nurse can have multiple records of vital sign and symptoms
+
+Objects will be used as data transfer object(DTO). When our application retrieves data from database, data will be constructed into an object. These objects will be called to be displayed on our GUI. 
+
+All attributes will have getters and setters within the class for encapsulation. All data will be retrieved and set through the use of getters and setters. 
+
+Our database will be composed of 3 tables. Patients, vital signs and symptoms. We are going to use 3 tables because SQL cannot store lists in column. Instead we are going to use relational database, where vital signs and symptoms will both have the column patientId for identification. patiendId is an auto-incremented integer in SQL so it is unique to every patient. 
+
+Health Card Number in patient table will have an unique key since there are no duplicates of health card number. By doing so we can search for patients using Health Card Number. 
+
+Using SQL database is more efficient than writing into text files. For example, we’ll have to loop through all patients and sort when we try to list up the patient and order it by arrival time or urgency. But using SQL will allow us to use the ORDER BY query to order the patients by arrival time or urgency. 
+
+Urgency level will be calculated in the constructor of vital sign using the method calculateUrgency. Using the condition given, a number from 1 to 4 will be returned. In the constructor of vital sign, patient’s age will come in as the parameter since age is one of the condition that will determine the urgency level.
+
+The latest measured vital sign will be the urgency level the program should look at. So when querying to database, we will order the vital sign by timeMeasured which will have the type DATETIME in SQL.
+
+searchPatientByUrgency will order by urgency level despondingly so that higher number comes in front and low number comes later. 
+
+searchPatientByArrivalTime will order by arrival time ascendingly so patients who came earlier comes in front and patients who came later comes later. 
+
+Only insert methods are in data manager since we have to keep track of previous data recorded. Updating will lose track of old data since it will overwrite the stored data. 

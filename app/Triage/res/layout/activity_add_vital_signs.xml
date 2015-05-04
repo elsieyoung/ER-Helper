@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+     android:background="@drawable/background_selector"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.triage.AddVitalSignsActivity" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="3500dp"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/linearlayout"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/systolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/systolic"
+            android:background="@drawable/edittext_background"
+            android:ems="8"
+            android:padding="10dp"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/heartRate"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="17dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_background"
+            android:ems="8"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/heartRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/temperature"
+            android:layout_alignLeft="@+id/diastolic"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/edittext_background"
+            android:ems="8"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/diastolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/systolic"
+            android:layout_below="@+id/systolic"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/edittext_background"
+            android:ems="8"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignTop="@+id/systolic"
+            android:text="@string/systolic"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignTop="@+id/diastolic"
+            android:text="@string/diastolic"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignTop="@+id/heartRate"
+            android:text="@string/heartRate"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/heartRate"
+            android:text="@string/tempreature"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+</RelativeLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_selector"
+            android:onClick="submit"
+            android:text="@string/submit_button"
+            android:textColor="#ffffff" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_selector"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.triage.DisplayActivity" >
+
+      <RelativeLayout
+      android:id="@+id/linearLayout1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/addVisit"
+      android:layout_alignLeft="@+id/viewVisit"
+      android:layout_alignParentTop="true"
+      android:background="@drawable/linearlayout"
+      android:orientation="vertical"
+      android:padding="10dp" >
+    
+     <ListView
+         android:id="@+id/visitListView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         
+         android:layout_centerHorizontal="true" >
+
+     </ListView>
+
+     </RelativeLayout>
+     
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/viewVisit"
+         android:layout_alignParentBottom="true"
+         android:background="@drawable/button_selector"
+         android:layout_alignRight="@+id/viewVisit"
+         android:onClick="searchAgain"
+          android:textColor="#ffffff"
+         android:text="@string/search_again" />
+
+     <Button
+         android:id="@+id/addVisit"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/addVitalSigns"
+         android:background="@drawable/button_selector"
+         android:textColor="#ffffff"
+         android:onClick="addVisits"
+         android:layout_marginTop="24dp"
+         android:text="@string/add_visit" />
+
+     <Button
+         android:id="@+id/addVitalSigns"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/viewVisit"
+          android:textColor="#ffffff"
+         android:background="@drawable/button_selector"
+         android:layout_alignLeft="@+id/addVisit"
+         android:layout_alignRight="@+id/addVisit"
+         android:onClick="addVitalSigns"
+         android:text="@string/add_vital_signs" />
+
+     <Button
+         android:id="@+id/viewVisit"
+         android:layout_width="fill_parent"
+          android:textColor="#ffffff"
+         android:layout_height="wrap_content"
+         android:background="@drawable/button_selector"
+         android:layout_above="@+id/button1"
+         android:layout_alignLeft="@+id/addVitalSigns"
+         android:onClick="viewVisit"
+         android:text="@string/view_visit" />
+     
+</RelativeLayout>

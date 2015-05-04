@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/background_selector"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.triage.DisplayPhysicianActivity" >
+
+         <Button
+             android:id="@+id/addPrescription"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/button1"
+              android:textColor="#ffffff"
+             android:background="@drawable/button_selector"
+             android:onClick="addPrescription"
+             android:text="@string/add_prescription" />
+
+         <Button
+             android:id="@+id/viewVisit"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/addPrescription"
+             android:layout_marginTop="24dp"
+              android:textColor="#ffffff"
+             android:background="@drawable/button_selector"
+             android:onClick="viewVisit"
+             android:text="@string/view_visit" />
+
+         <Button
+             android:id="@+id/button1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/addPrescription"
+             android:layout_alignParentBottom="true"
+              android:textColor="#ffffff"
+             android:layout_alignRight="@+id/addPrescription"
+             android:background="@drawable/button_selector"
+             android:onClick="searchAgain2"
+             android:text="@string/search_again" />
+
+  <RelativeLayout
+      android:id="@+id/linearLayout1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/viewVisit"
+      android:layout_alignLeft="@+id/viewVisit"
+      android:layout_alignParentTop="true"
+      android:background="@drawable/linearlayout"
+      android:orientation="vertical"
+      android:padding="10dp" >
+
+      <ListView
+          android:id="@+id/visitListView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true" >
+      </ListView>
+  </RelativeLayout>
+
+</RelativeLayout>

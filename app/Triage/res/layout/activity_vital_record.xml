@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/background_selector"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.triage.VitalRecordActivity" >
+    
+        <TextView
+        android:id="@+id/vital_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+        <Button
+        android:id="@+id/returnButton2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+         android:textColor="#ffffff"
+        android:background="@drawable/button_selector"
+        android:layout_alignParentBottom="true"
+        android:onClick="returntoViewVisit"
+        android:text="@string/get_back_to_view_visit" />
+
+        <RelativeLayout
+      android:id="@+id/linearLayout1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/returnButton2"
+      android:layout_alignParentTop="true"
+      android:background="@drawable/linearlayout"
+      android:orientation="vertical"
+      android:padding="10dp" >
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/switchStatus" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/switchStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listView2"
+        android:layout_toLeftOf="@+id/switch1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:saveEnabled="true"
+        android:textOff="Add"
+         android:textColor="#ffffff"
+        android:textOn="Added"
+        android:layout_alignRight="@+id/listView2" />
+</RelativeLayout>
+</RelativeLayout>

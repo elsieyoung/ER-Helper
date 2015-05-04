@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_selector"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.triage.AddPatientActivity" >
+
+     <RelativeLayout
+         android:id="@+id/linearLayout1"
+         android:layout_width="500dp"
+         android:layout_height="320dp"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:background="@drawable/linearlayout"
+         android:orientation="vertical"
+         android:padding="10dp" >
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/patient_last_name"
+             android:layout_marginTop="30dp"
+             android:text="@string/dob"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textColor="#ffffff"
+             android:textSize="13sp" />
+
+         <EditText
+             android:id="@+id/YearText"
+             android:layout_width="100dp"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView1"
+             android:layout_below="@+id/textView1"
+             android:background="@drawable/edittext_background"
+             android:ems="6"
+             android:hint="@string/year"
+             android:inputType="text"
+             android:padding="10dp"
+             android:singleLine="true" />
+
+         <EditText
+             android:id="@+id/patient_first_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/patient_last_name"
+             android:layout_alignRight="@+id/patient_hcn"
+             android:layout_below="@+id/textView3"
+             android:background="@drawable/edittext_background"
+             android:ems="8"
+             android:hint="@string/first_name"
+             android:inputType="text"
+             android:padding="10dp"
+             android:singleLine="true" />
+
+         <EditText
+             android:id="@+id/patient_last_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView1"
+             android:layout_alignRight="@+id/patient_hcn"
+             android:layout_below="@+id/patient_first_name"
+             android:background="@drawable/edittext_background"
+             android:ems="8"
+             android:hint="@string/last_name"
+             android:inputType="text"
+             android:padding="10dp"
+             android:singleLine="true" />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/YearText"
+             android:layout_below="@+id/MonthText"
+             android:layout_marginTop="20dp"
+             android:text="@string/hcn"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textColor="#ffffff"
+             android:textSize="13sp" />
+
+         <EditText
+             android:id="@+id/patient_hcn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView2"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/textView2"
+             android:background="@drawable/edittext_background"
+             android:ems="8"
+             android:inputType="number"
+             android:padding="10dp"
+             android:singleLine="true" />
+
+         <TextView
+             android:id="@+id/textView3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/patient_first_name"
+             android:layout_alignParentTop="true"
+             android:text="@string/name"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textColor="#ffffff"
+             android:textSize="13sp" />
+
+         <EditText
+             android:id="@+id/MonthText"
+             android:layout_width="83dp"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/textView1"
+             android:layout_toRightOf="@+id/YearText"
+             android:background="@drawable/edittext_background"
+             android:ems="8"
+             android:hint="@string/month"
+             android:inputType="text"
+             android:padding="10dp"
+             android:singleLine="true" >
+
+             <requestFocus />
+         </EditText>
+
+         <EditText
+             android:id="@+id/DayText"
+             android:layout_width="83dp"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/MonthText"
+             android:layout_alignBottom="@+id/MonthText"
+             android:layout_toRightOf="@+id/MonthText"
+             android:background="@drawable/edittext_background"
+             android:ems="6"
+             android:hint="@string/date"
+             android:inputType="text"
+             android:padding="10dp"
+             android:singleLine="true" />
+
+     </RelativeLayout>
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/linearLayout1"
+         android:layout_alignRight="@+id/linearLayout1"
+         android:layout_below="@+id/linearLayout1"
+         android:layout_marginTop="26dp"
+         android:background="@drawable/button_selector"
+         android:onClick="submitInfo"
+         android:text="@string/submit_button"
+         android:textColor="#ffffff" />
+
+</RelativeLayout>

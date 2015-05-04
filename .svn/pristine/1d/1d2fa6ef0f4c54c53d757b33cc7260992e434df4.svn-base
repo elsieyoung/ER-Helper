@@ -1,0 +1,14 @@
+November 6th:
+(a) 
+Elsie: Completed patient, visit and vital sign classes. 
+Johnny: Working on saving and loading text files. Adjust saving and loading methods to serializable objects. Ludi: Working on activities, and connecting backend to GUI. Implementing all the GUI that were hand drawn.
+ Suhwan: Working on data manager class for handling data such as searching and adding objects.
+
+(b)
+Elsie: Assist Ludi with activities and connection between backend and GUI.
+ Johnny: Wrap up all loading and saving files with proper error catching.
+ Ludi: Wrap up all the activities that were discussed in the meeting. 
+Suhwan: Wrap up all the data management methods. 
+
+(c)
+Encountered problems with saving files. Since there were several ways of handling data, we had to come up with a consensus on the way to save and load files.

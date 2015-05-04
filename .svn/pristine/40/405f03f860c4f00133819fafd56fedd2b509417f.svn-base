@@ -1,0 +1,11 @@
+Description to CRC Model 
+-DataManager class will do all the data manipulation such as adding, sorting, searching, saving and loading patients. 
+	-Patient class will have a list of visit records. Under each visit records, there will be a list of records of vital signs and a list of symptoms. 
+
+-Patient class will have an array list of visit records and an array list of symptoms.
+
+-All data are saved in database and when starting the application, all the data will be loaded.
+ Then, we will be manipulating data in database during the use of application.
+-The app start with the MainActivity. If the user is a nurse, it goes to the SearchActivity. If the user is a physician, it goes to the PhysicianSearchActivity.
+-SearchActivity has the options in terms of what nurse can do, such as search patient by health card number (then add new visit record, add new vital signs or view previous visit records), add new patient, access a list of waiting patient ordered by urgency.
+-PhysicianSearchActivity has the options in terms of what physicians can do. Physicians can only search patients and then view the specific patient's previous visit records or add a new prescription (medication name and instructions) for this patient.

@@ -1,0 +1,13 @@
+﻿October 31st 2014
+Current state of the project:
+	•	Graphical User Interface drawn
+	•	CRC Model Completed
+	•	Load and save patient information from text file (“patient_records.txt”) 
+
+Tasks for this week (until November 3rd):
+	•	Description to CRC Model ( Johnny )
+	•	Implement GUI ( Ludi )  
+	•	Complete load and save information to textfile ( Johnny )
+	•	Work on backend
+	⁃	Suhwan : DataManager, Users
+	⁃	Elsie : Patient, Symptoms, Visit, VitalSigns

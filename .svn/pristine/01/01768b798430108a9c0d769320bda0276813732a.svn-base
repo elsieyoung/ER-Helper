@@ -1,0 +1,52 @@
+November 17th
+(a) 
+Start of phase III - No updates from Phase II
+
+(b)
+Create a flowchart of how our application is going to work.
+Design a database to store input from user.
+Create appropriate classes or update classes adjusted to phaseIII.
+Create activities followed by the flowchart that was designed. 
+
+(c)
+Elsie: Create a suitable flowchart for phase III with Ludi
+Dong Hyuk: Design a relational database for phase III with Suhwan
+Ludi: Create a suitable flowchart for phase III with Elsie
+Shun: Design a relational database for phase III with Suhwan
+
+
+
+November 19th
+(a) 
+login page is finished, flowchart for new design drawn and database tables designed. 
+
+(b) 
+Phase II our group used text files to load and save. From text file, change the saving and load so that it loads from the database. 
+Work on the UI followed by the flowchart that was designed earlier. 
+
+Elsie: Work on the new activities and GUI with Ludi.
+Dong Hyuk: Implement the database adapter class which includes inserting and selecting. 
+Ludi: Work on the new activities and GUI with Elsie.
+Suhwan: Implement the database helper class which will create the database.
+
+(c) 
+Designing a relational database was troublesome since there were many information under one patient, we had to split everything. One table per class to maintain the structure we used from Phase II.
+
+
+
+November 24th
+(a)
+Basic user interface completed and our application has its own database (CREATE Query completed). 
+
+(b)
+Work on improving the design and start connecting the database to the user interface. Currently still running on text file. 
+
+Elsie: Work on improving on the user interface.
+Dong Hyuk: Make queries that is suitable for user interface.
+Ludi: Help Elsie on improving the user interface.
+Suhwan: Help Dong Hyuk on database connections and making queries and test out the queries that are made.
+
+(c)
+Run time error for database caused issues. Had to reduce the number of queries sent to database to prevent this from happening. 
+
+
